@@ -20,7 +20,7 @@ router.get('/', (req, res) => {
 });
 
 // get one product
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   try {
     const productData = await Product.findByPk(req.params.id, {
       include: [
@@ -72,7 +72,7 @@ router.post('/', (req, res) => {
 });
 
 // update product
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   // update product data
   Product.update(req.body, {
     where: {
@@ -113,7 +113,7 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete(':/id', (req, res) => {
+router.delete(':/id', async (req, res) => {
   try {
     const productData = await Product.destroy({
       where: {
