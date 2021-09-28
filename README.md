@@ -10,7 +10,7 @@ This application is designed to assist business owners in keeping track of fluct
 
 ## Using application
 
-To use this application, refer to this video: 
+To use this application, refer to this video: https://watch.screencastify.com/v/rmvg77u71rnMDazOKUAn
 
 ## Installing application
 
